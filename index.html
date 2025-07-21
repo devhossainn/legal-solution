@@ -9,13 +9,60 @@
       href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./style.css" />
     <title>legal-solution</title>
   </head>
   <body>
-    <header class="bg-gray-500 p-3 w-[200px] m-auto">
-      <h2 class="text-center text-amber-50 p-2 mx-a primary-btn">Hello</h2>
+    <header>
+      <nav class="container navbar">
+        <div
+          class="nav-content flex sm:flex-row gap-5 flex-col sm:justify-between items-center py-10"
+        >
+          <div class="nav-logo">
+            <img src="./images/logo2.png" alt="logo2" />
+          </div>
+
+          <ul
+            class="nav-links flex sm:flex-row flex-col items-center gap-7 capitalize font-[500] text-base"
+          >
+            <li>
+              <a href="#" class="link-item"
+                >Home
+                <i class="fa-solid fa-greater-than"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="link-item">
+                service <i class="fa-solid fa-greater-than"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="link-item">
+                cases <i class="fa-solid fa-greater-than"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="link-item">
+                Blog <i class="fa-solid fa-greater-than"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="link-item">
+                Contact us <i class="fa-solid text-[14px] fa-greater-than"></i>
+              </a>
+            </li>
+          </ul>
+          <a href="#" class="primary-btn">Free Consultation</a>
+        </div>
+      </nav>
     </header>
     <main></main>
     <footer></footer>
