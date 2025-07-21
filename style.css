@@ -26,13 +26,17 @@
   --gray-light: #f3f3f3;
   --gray-bold: #414040;
 }
+img {
+  width: 100%;
+  display: block;
+}
 
 .primary-title {
   color: var(--gray-bold);
   font-family: "EB Garamond", sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
-  line-height: 3rem;
+  line-height: 5rem;
 }
 .primary-description {
   color: var(--gray);
@@ -66,4 +70,36 @@
   transition: color 0.3s;
 }
 /* header */
+.banner {
+  text-align: center;
+  position: relative;
+  z-index: -2;
+  background-image: url(./images/banner.png);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+.banner-shadow {
+  position: absolute;
+  z-index: -1;
+}
 
+.nav-heading {
+  font-size: 72px;
+  color: var(--gray-light);
+  text-align: center;
+}
+.nav-description {
+  margin-top: 2rem;
+  color: var(--gray-light);
+  text-align: center;
+}
+.search{
+  display: flex;
+}
+input[type="text"] {
+  border: 1px solid var(--gray-light);
+  width: 100%;
+  background: var(--secondary-color);
+}
