@@ -11,6 +11,25 @@
   .font-bitcount {
     font-family: "Bitcount Prop Single", system-ui;
   }
+  /* .border-top-right-none {
+    border-top: 1px solid transparent;
+    border-right: 1px solid transparent;
+  }
+  .border-top-none {
+    border-top: 1px solid transparent;
+  }
+  .border-bottom-none {
+    border-bottom: 1px solid transparent;
+  }
+  .border-left-none {
+    border-left: 1px solid transparent;
+  }
+  .border-right-none {
+    border-right: 1px solid transparent;
+  }
+  .border-bottom {
+    border-bottom: 1px solid var(--gray-light);
+  } */
 }
 .section-container {
   max-width: 1170px;
@@ -25,12 +44,8 @@
   --gray-light: #f3f3f3;
   --gray-bold: #414040;
 }
-img {
-  width: 100%;
-  display: block;
-}
 
-/* .primary-title {
+.primary-title {
   color: var(--gray-bold);
   font-family: "EB Garamond", sans-serif;
   font-size: 2.5rem;
@@ -43,7 +58,7 @@ img {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;
-} */
+}
 .primary-btn {
   display: inline-block;
   color: #fff;
@@ -92,4 +107,88 @@ img {
 .banner-content {
   position: relative;
   z-index: 1;
+}
+/* legal practice section */
+.legal-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 4rem;
+  border: 1px solid var(--secondary-color);
+  transition: all 0.3s ease-in-out;
+}
+.legal-card .legal-card-heading {
+  margin-top: 1.8rem;
+  color: var(--gray-bold);
+  font-family: "EB Garamond", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.legal-card .legal-card-description {
+  margin-top: 1.5rem;
+  color: var(--gray);
+  font-family: "poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.right-arrow {
+  margin-top: 32px;
+  width: 25px;
+  height: 25px;
+  display: grid;
+  place-content: center;
+  color: #fff;
+  background: var(--primary-color);
+  border-radius: 50%;
+}
+.fa-arrow-right {
+  margin: 0;
+}
+.legal-card:hover {
+  border: 1px solid transparent;
+  box-shadow: inset rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  /* transform: scale(0.99); */
+}
+.card-1,
+.card-2,
+.card-3 {
+  border-top: 1px solid transparent;
+}
+.card-4,
+.card-5,
+.card-6 {
+  border-bottom: 1px solid transparent;
+}
+.card-3,
+.card-6 {
+  border-right: 1px solid transparent;
+}
+.card-1,
+.card-4 {
+  border-left: 1px solid transparent;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+  .legal-card {
+    border: 1px solid var(--secondary-color);
+  }
+  .card-1,
+  .card-3,
+  .card-5 {
+    border-left: 1px solid transparent;
+  }
+  .card-2,
+  .card-4,
+  .card-6 {
+    border-right: 1px solid transparent;
+  }
+  .card-1,
+  .card-2 {
+    border-top: 1px solid transparent;
+  }
+  .card-5,
+  .card-6 {
+    border-bottom: 1px solid transparent;
+  }
 }
