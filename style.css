@@ -151,7 +151,9 @@
 .card-4 {
   border-left: 1px solid transparent;
 }
-/*  */
+/*  faq section*/
+
+
 @media screen and (max-width: 640px) {
   .legal-card {
     border: 1px solid var(--secondary-color);
