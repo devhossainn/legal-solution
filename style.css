@@ -11,29 +11,10 @@
   .font-bitcount {
     font-family: "Bitcount Prop Single", system-ui;
   }
-  /* .border-top-right-none {
-    border-top: 1px solid transparent;
-    border-right: 1px solid transparent;
-  }
-  .border-top-none {
-    border-top: 1px solid transparent;
-  }
-  .border-bottom-none {
-    border-bottom: 1px solid transparent;
-  }
-  .border-left-none {
-    border-left: 1px solid transparent;
-  }
-  .border-right-none {
-    border-right: 1px solid transparent;
-  }
-  .border-bottom {
-    border-bottom: 1px solid var(--gray-light);
-  } */
 }
 .section-container {
   max-width: 1170px;
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
 }
 :root {
@@ -46,13 +27,15 @@
 }
 
 .primary-title {
+  margin-top: 0.5rem;
   color: var(--gray-bold);
   font-family: "EB Garamond", sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
-  line-height: 5rem;
+  line-height: 3rem;
 }
 .primary-description {
+  margin-top: 1rem;
   color: var(--gray);
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
@@ -168,7 +151,7 @@
 .card-4 {
   border-left: 1px solid transparent;
 }
-
+/* ` */
 @media screen and (min-width: 641px) and (max-width: 1023px) {
   .legal-card {
     border: 1px solid var(--secondary-color);
