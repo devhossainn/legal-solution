@@ -22,9 +22,9 @@
   </head>
   <body>
     <header>
-      <nav class="container navbar">
+      <nav class="section-container navbar">
         <div
-          class="nav-content flex sm:flex-row gap-5 flex-col sm:justify-between items-center py-10"
+          class="nav-content flex lg:flex-row gap-5 flex-col sm:justify-between items-center py-10"
         >
           <div class="nav-logo">
             <img src="./images/logo2.png" alt="logo2" />
@@ -63,27 +63,40 @@
           <a href="#" class="primary-btn">Free Consultation</a>
         </div>
       </nav>
-      <section class="container banner">
-        <div class="banner-content max-w-[690px] mx-auto py-[120px]">
-          <h3 class="primary-title nav-heading">
+    </header>
+    <main>
+      <!-- banner section -->
+      <section
+        class="section-container banner lg:py-[120px] pt-5 pb-3 rounded-2xl"
+      >
+        <div class="banner-shadow top-0">
+          <img src="./images/shadow.png" alt="shadow" />
+        </div>
+        <div class="banner-content max-w-[690px] mx-3 md:mx-auto text-center ">
+          <h3
+            class="nav-heading lg:text-7xl/20 sm:text-5xl text-4xl font-bold text-white font-garamond"
+          >
             We Provide Effective Legal Solutions
           </h3>
-          <p class="primary-description nav-description">
+          <p
+            class="nav-description lg:text-base/6 font-normal md:mt-10 mt-4 text-gray-300 font-poppins"
+          >
             There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered alteration in some form, by injected
             humour.
           </p>
-          <form class="  search mt-5 gap-5">
-            <input type="text" class="rounded-2xl p-2.5" placeholder="Search your services" required />
-            <input type="submit" class="primary-btn" value="button" />
+          <form class="search flex flex-col md:flex-row mt-5 sm:mt-10 gap-2 lg:gap-5">
+            <input
+              type="text"
+              class="rounded-2xl bg-amber-50 w-full h-16 px-5 border-0 outline-0"
+              placeholder="Search your services"
+              required
+            />
+            <input type="submit" class="primary-btn" value="Search" />
           </form>
         </div>
-        <div class="banner-shadow top-0">
-          <img src="./images/shadow.png" alt="shadow" />
-        </div>
       </section>
-    </header>
-    <main></main>
+    </main>
     <footer></footer>
   </body>
 </html>
