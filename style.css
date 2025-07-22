@@ -35,6 +35,8 @@
   line-height: 3rem;
 }
 .primary-description {
+  margin: auto;
+  max-width: 700px;
   margin-top: 1rem;
   color: var(--gray);
   font-family: "Poppins", sans-serif;
@@ -99,7 +101,8 @@
   text-align: center;
   padding: 3rem 4rem;
   border: 1px solid var(--secondary-color);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-out;
+  gap: 1rem;
 }
 .legal-card .legal-card-heading {
   margin-top: 1.8rem;
@@ -129,9 +132,8 @@
   margin: 0;
 }
 .legal-card:hover {
+  background: #e7e7e732;
   border: 1px solid transparent;
-  box-shadow: inset rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  /* transform: scale(0.99); */
 }
 .card-1,
 .card-2,
@@ -151,15 +153,100 @@
 .card-4 {
   border-left: 1px solid transparent;
 }
-/*  faq section*/
+/*  clients section*/
+.client-items {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: repeat(3, 1fr); */
+}
+.client {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-image: url(./images/banner.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.client-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+.client-shadow img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.client-content {
+  position: relative;
+  z-index: 1;
+}
 
-
+.client-1 {
+  grid-row: span 2;
+}
+.client-2 {
+  grid-column: span 2;
+}
+.client-3 {
+  grid-column-start: 3;
+  grid-row: 2 / span 2;
+}
+.client-4 {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+.client-5 {
+  grid-column: 1 / span 2;
+  grid-row-start: 3;
+}
+/* contact section */
+.contact-detail-item {
+  border: var(--secondary-color) 1px solid;
+}
+/* contact form */
+form #text {
+  width: 100%;
+  height: 5.5rem;
+  background: var(--primary-bg);
+  outline: none;
+  border: none;
+  padding: 20px;
+  border-radius: 8px;
+}
+form textarea {
+  width: 100%;
+  height: 14rem;
+  background: var(--primary-bg);
+  outline: none;
+  border: none;
+  padding: 20px;
+  border-radius: 8px;
+  resize: none;
+}
+form > #text::placeholder,
+form > textarea::placeholder {
+  font-size: 16px;
+  font-family: "poppins", sans-serif;
+  color: var(--gray);
+}
 @media screen and (max-width: 640px) {
   .legal-card {
     border: 1px solid var(--secondary-color);
   }
 }
 @media screen and (min-width: 641px) and (max-width: 1023px) {
+  .client-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .legal-card {
     border: 1px solid var(--secondary-color);
   }
