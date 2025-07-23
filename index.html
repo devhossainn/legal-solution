@@ -423,7 +423,7 @@
             humour.
           </p>
           <div
-            class="contact-content flex lg:flex-row flex-col justify-between lg:items-center  gap-10 mt-16"
+            class="contact-content flex lg:flex-row flex-col justify-between lg:items-center gap-10 mt-16"
           >
             <!-- contact detail -->
             <div
@@ -492,7 +492,7 @@
               </div>
             </div>
             <!-- contact form -->
-            <div class="contact-form  flex-1/2">
+            <div class="contact-form flex-1/2">
               <form action="" class="flex flex-col gap-6">
                 <input
                   type="text"
@@ -532,10 +532,56 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="lg:mt-[120px] mt-16 py-10 lg:py-16 bg-[#111] text-white">
       <section class="section-container">
-        <div class="footer-content">
-          <div class="footer-title"></div>
+        <div
+          class="footer-content flex flex-col justify-center lg:items-start items-center lg:flex-row gap-8 lg:gap-15"
+        >
+          <div class="footer-logo flex-1/4 flex flex-col lg:items-start items-center">
+            <img src="./images/logo.png" alt="logo" class="footer-logo" />
+            <p class="footer-logo-description lg:w-[100%] w-[50%] lg:text-left text-center ">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour.
+            </p>
+          </div>
+          <div class="footer-links flex-1/4">
+            <h3 class="footer-links-title">Useful Links</h3>
+            <ul>
+              <li><a href="#" class="footer-link-item">Home</a></li>
+              <li><a href="#" class="footer-link-item">About Us</a></li>
+              <li><a href="#" class="footer-link-item">Clients</a></li>
+              <li><a href="#" class="footer-link-item">Blogs</a></li>
+              <li><a href="#" class="footer-link-item">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact flex-1/4">
+            <h3 class="footer-contact-title">Contact Now</h3>
+            <p class="contact-address">555 4th 5t NW, Washington</p>
+            <p class="contact-address">DC 20530, United States</p>
+            <p class="contact-number mt-4">+88 01750 000 000</p>
+            <p class="contact-number">+88 01750 000 000</p>
+            <p class="contact-email mt-4">info@gmail.com</p>
+            <p class="contact-email">info@gmail.com</p>
+          </div>
+          <div class="footer-subscribe flex-1/4">
+            <h3 class="footer-subscribe-title">Subscribe</h3>
+            <p class="footer-subscribe-description">
+              Subscribe for our latest & Articles. We Won't Give You Spam Mails
+            </p>
+            <form class="footer-form relative mt-5">
+              <input
+                type="text"
+                placeholder="Email Address"
+                class="w-full  h-20 px-4 rounded-lg bg-white"
+              />
+              <button
+                class="bg-[#B68C5A] text-white absolute top-0 h-20 right-[-4rem] px-8 rounded-br-lg rounded-tr-lg"
+              >
+                <i class="text-lg fa-regular fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
         </div>
       </section>
     </footer>
