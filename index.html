@@ -423,7 +423,7 @@
             humour.
           </p>
           <div
-            class="contact-content flex lg:flex-row flex-col justify-between gap-10 mt-16"
+            class="contact-content flex lg:flex-row flex-col justify-between lg:items-center  gap-10 mt-16"
           >
             <!-- contact detail -->
             <div
@@ -492,26 +492,26 @@
               </div>
             </div>
             <!-- contact form -->
-            <div class="contact-form flex-1/2">
+            <div class="contact-form  flex-1/2">
               <form action="" class="flex flex-col gap-6">
                 <input
                   type="text"
                   name="name"
-                  id="text"
+                  class="form-input"
                   placeholder="Your Name"
                   required
                 />
                 <input
                   type="text"
                   name="email"
-                  id="text"
+                  class="form-input"
                   placeholder="Your Email"
                   required
                 />
                 <input
                   type="text"
                   name="subject"
-                  id="text"
+                  class="form-input"
                   placeholder="Subject"
                   required
                 />
@@ -534,7 +534,9 @@
     </main>
     <footer>
       <section class="section-container">
-        <div class="footer-content"></div>
+        <div class="footer-content">
+          <div class="footer-title"></div>
+        </div>
       </section>
     </footer>
   </body>
