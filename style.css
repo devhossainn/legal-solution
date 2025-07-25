@@ -245,7 +245,7 @@ form > textarea::placeholder {
 .footer-logo-description,
 .footer-link-item,
 .footer-contact p,
-.footer-subscribe-description{
+.footer-subscribe-description {
   font-family: "poppins", sans-serif;
   color: #cfcfcf;
 }
@@ -257,7 +257,7 @@ form > textarea::placeholder {
   font-size: 24px;
   font-weight: 800;
 }
-.footer-links ul li{
+.footer-links ul li {
   margin-top: 1rem;
   font-size: 1rem;
 }
@@ -289,8 +289,26 @@ form > textarea::placeholder {
     grid-column: 1;
     grid-row: 5;
   }
+  .footer-links-title,
+  .footer-contact-title,
+  .footer-subscribe-title,
+  .footer-logo {
+    margin-bottom: 1rem;
+  }
+  .footer-subscribe-title {
+    margin-bottom: 0;
+  }
 }
 @media screen and (min-width: 641px) and (max-width: 1023px) {
+  .footer-links-title,
+  .footer-contact-title,
+  .footer-subscribe-title,
+  .footer-logo {
+    margin-bottom: 1rem;
+  }
+  .footer-subscribe-title {
+    margin-bottom: 0;
+  }
   .legal-card {
     border: 1px solid var(--secondary-color);
   }
